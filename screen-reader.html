@@ -52,8 +52,8 @@
 <p>This guide describes the structure of the informational views in AInspector Sidebar. It includes an overview of the scope and types of information provided by AInspector, along with tips on navigating between and among the three view levels.</p>
 <p>It is intended as a guide for screen reader users, but anyone interested in how information is structured in AInspector Sidebar may find it useful.</p>
 <h2 id="views-and-progressive-disclosure-of-information">Views and progressive disclosure of information</h2>
-<p>When AInspector Sidebar evaluates the page loaded in Firefox, it produces a vast array of information. For example, when the <strong>HTML5 &amp; Aria Techniques</strong> ruleset is selected, there is detailed information available from within the sidebar on 118 accessibility rules (at the time of this writing). For each of these rules you can find information that includes its definition, purpose, the recommended techniques for conforming to the rule, associated WCAG 2.0 Success Criteria, etc.</p>
-<p>And while not all 118 rules will have been evaluated for any given page (since some, and usually many rules will be <strong>not applicable</strong>), information is provided on all of the rules that were applicable down to the element level. Thus for some rules at the rule details level, there are lists of potentially hundreds of elements along with pertinent evaluation result information for each element. AInspector Sidebar allows you to drill down to this information for each rule evaluation result.</p>
+<p>When AInspector Sidebar evaluates the page loaded in Firefox, it produces a vast array of information. For example, when the <strong>HTML5 &amp; Aria Techniques</strong> ruleset is selected, there is detailed information available from within the sidebar on 128 accessibility rules (at the time of this writing). For each of these rules you can find information that includes its definition, purpose, the recommended techniques for conforming to the rule, associated WCAG 2.0 Success Criteria, etc.</p>
+<p>And while not all 128 rules will have been evaluated for any given page (since some, and usually many rules will be <strong>not applicable</strong>), information is provided on all of the rules that were applicable down to the element level. Thus for some rules at the rule details level, there are lists of potentially hundreds of elements along with pertinent evaluation result information for each element. AInspector Sidebar allows you to drill down to this information for each rule evaluation result.</p>
 <h3 id="sidebars-have-a-very-limited-amount-of-space">Sidebars have a very limited amount of space</h3>
 <p>XUL sidebars in Firefox operate within a certain set of constraints. One of these relates to its geometry, namely a maximum width and height. Another is that the sidebar itself is not scrollable. Thus, AInspector Sidebar makes use of views for its progressive display of information.</p>
 <p>When you select a view, the information for the current view is replaced by the information for the selected view. It is important to note that the sidebar provides information for only one view at a time.</p>
@@ -63,9 +63,9 @@
 <ul>
 <li>1 Summary view,</li>
 <li>25 Rule Category or WCAG Guideline views (including the All Rules view), and</li>
-<li>118 Rule Details views</li>
+<li>128 Rule Details views</li>
 </ul>
-<p>for a grand total of 144 separate informational views.</p>
+<p>for a grand total of 154 separate informational views.</p>
 <p>However, this becomes much simpler when you consider the information structure with respect to view levels. The three levels are, ordered from high to low:</p>
 <ul>
 <li>Summary view</li>
