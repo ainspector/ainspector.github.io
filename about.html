@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!-- Bootstrap: Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- Bootstrap: Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/main.css">
+<title>About: AInspector Sidebar</title>
+</head>
+
+<body>
+<header>
+<nav class="navbar navbar-default" aria-label="Site Navigation">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">AInspector Sidebar — Documentation</a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User Guides<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+  <li><a href="overview.html">Getting Started</a></li>
+  <li><a href="concepts.html">Concepts and Terms</a></li>
+  <li><a href="rulesets.html">Rulesets</a></li>
+  <li><a href="views.html">Views</a></li>
+  <li><a href="screen-reader.html">Screen Reader Users</a></li>
+  <li><a href="installation.html">Installation Guide</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- navbar-collapse -->
+</div><!-- container-fluid -->
+</nav>
+</header>
+
+<main class="container">
+<div class="row">
+<div class="col-sm-9 post-content">
+<h1 class="page-title">About AInspector Sidebar</h1>
+<p>AInspector Sidebar is a web accessibility evaluation tool that applies the rules from a selected ruleset to the live DOM of the page currently loaded in the browser. You install it as a Firefox Add-on available from the Mozilla Add-ons website.</p>
+<p>Once installed, AInspector Sidebar can be selectively loaded into the sidebar panel of any Firefox browser tab, and once loaded, it automatically displays evaluation results whenever a new page is visited in that tab.</p>
+<p>Evaluation results are organized by <em>rule categories</em>, <em>rules</em> within a category, and <em>elements</em> that pertain to a particular <em>rule</em> result. Links are provided at the element level for launching the Firefox DOM Inspector.</p>
+<h3 id="resources">Resources</h3>
+<ul>
+<li><p>Visit the <a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/">Mozilla Add-ons page</a> to install the latest version of AInspector Sidebar.</p>
+</li>
+<li><p>See <a href="overview.html">Getting Started</a>, <a href="concepts.html">Concepts and Terms</a> and the other User Guides on this site for more information on using AInspector Sidebar and understanding its evaluation results.</p>
+</li>
+<li><p>Subscribe to the <a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-announcements">OAA Tools Announcements</a>
+list to receive an email notification when a new release is added.</p>
+</li>
+</ul>
+<h2 id="release-notes">Release Notes</h2>
+<h3 id="v1-0-0-beta-2">v1.0.0-beta.2</h3>
+<p>21 Jan 2016 &mdash; OAA Evaluation Library v1.0.0-beta.4</p>
+<ul>
+<li>Updated paths to devtools modules for compatibility with Firefox 44</li>
+<li>Fully reviewed and available at <a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/">Mozilla Add-ons</a></li>
+</ul>
+<h3 id="v1-0-0-beta-1">v1.0.0-beta.1</h3>
+<p>1 Oct 2015 &mdash; OAA Evaluation Library v1.0.0-beta.3</p>
+<ul>
+<li>Incorporates the latest OAA Evaluation Library Beta release</li>
+<li>Additional rule messaging updates: Images, Reading Order</li>
+<li>Fully reviewed and available at <a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/versions/">Mozilla Add-ons</a></li>
+</ul>
+<h3 id="v0-16-8-7">v0.16.8.7</h3>
+<p>25 Sep 2015 &mdash; OAA Evaluation Library v1.0.0-beta.2</p>
+<ul>
+<li>Incorporates the latest OAA Evaluation Library</li>
+<li>Many rule messaging updates: Landmarks, Images, Reading Order</li>
+<li>Updated Firefox compatibility version to 41.*</li>
+</ul>
+<h3 id="v0-16-8-6">v0.16.8.6</h3>
+<p>17 Sep 2015 &mdash; OAA Evaluation Library v1.0.0-beta.1</p>
+<ul>
+<li>Incorporates the latest OAA Evaluation Library</li>
+<li>New rules added and many others updated</li>
+</ul>
+<h3 id="v0-16-8-5">v0.16.8.5</h3>
+<p>31 Aug 2015 &mdash; OAA Evaluation Library v0.9.9.1a</p>
+<ul>
+<li>Updated code to use SidebarUI API, which includes a toggle method that replaces the deprecated toggleSidebar function.</li>
+<li>Fully reviewed and available at <a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/versions/">Mozilla Add-ons</a></li>
+</ul>
+<h3 id="v0-16-8-4">v0.16.8.4</h3>
+<p>26 Aug 2015 &mdash; OAA Evaluation Library v0.9.9.1a</p>
+<ul>
+<li>Incorporates the latest OAA Evaluation Library</li>
+<li>Replaced code that utilized deprecated FUEL API with code that utilizes XPCOM to get and set preferences</li>
+<li>Updated Firefox compatibility version to 40.*</li>
+</ul>
+<h3 id="v0-16-8-3">v0.16.8.3</h3>
+<p>28 May 2015 &mdash; OAA Evaluation Library v0.9.9.1</p>
+<ul>
+<li>Incorporates the latest OAA Evaluation Library</li>
+<li>Updated Firefox compatibility version to 38.*</li>
+</ul>
+<h3 id="v0-16-8-2">v0.16.8.2</h3>
+<p>29 Apr 2015 &mdash; OAA Evaluation Library v0.9.8.2</p>
+<ul>
+<li>Added keyboard shortcut for toggling the sidebar in Firefox: <code>Ctrl</code> <code>Shift</code> <code>u</code> (Mac: <code>Cmd</code> <code>Shift</code> <code>u</code>)</li>
+<li>Incorporates the latest OAA Evaluation Library</li>
+<li>Updated Firefox compatibility version to 37.*</li>
+</ul>
+<h3 id="v0-16-8-1">v0.16.8.1</h3>
+<p>12 Mar 2015 &mdash; OAA Evaluation Library v0.9.8.1</p>
+<ul>
+<li>Incorporates the latest OAA Evaluation Library, which includes bug fixes.</li>
+<li>Began using JSHint in conjunction with refactoring code in AInspector.</li>
+</ul>
+<h3 id="v0-16-8">v0.16.8</h3>
+<p>3 Mar 2015 &mdash; OAA Evaluation Library v0.9.8</p>
+<ul>
+<li>Incorporates the latest OAA Evaluation Library, which includes:<ul>
+<li>Updates, in the Tables category, to rules for data table headers, accessible names and descriptions</li>
+<li>The addition, in the Keyboard Support category, of the &quot;Skip to main content link&quot; rule</li>
+</ul>
+</li>
+<li>Added keyboard shortcut for opening Preferences dialog: <code>Ctrl</code> <code>.</code> (on the Mac: <code>Cmd</code> <code>.</code>)</li>
+<li>Updated Firefox compatibility version to 36.*</li>
+</ul>
+<h3 id="v0-16-7-3">v0.16.7.3</h3>
+<p>12 Feb 2015 &mdash; OAA Evaluation Library v0.9.7.4</p>
+<ul>
+<li>Incorporates the latest OAA Evaluation Library, which includes:<ul>
+<li>The new &#39;HTML4 Legacy Techniques&#39; ruleset</li>
+<li>Bugfixes to individual rules</li>
+</ul>
+</li>
+<li>Updated Firefox compatibility version to 35.*</li>
+<li>Includes new logo image.</li>
+</ul>
+<h3 id="v0-16-7-2">v0.16.7.2</h3>
+<p>15 Jan 2015 &mdash; OAA Evaluation Library v0.9.7.2</p>
+<ul>
+<li>Incorporates the latest OAA Evaluation Library, which includes fixes for event processing and inadvertent changes to Rule API.</li>
+<li>Updated &#39;About&#39; dialog with more specific information re. the OAA Evaluation Library.</li>
+<li>Updated evaluatorFactory method call to sync with recent evaluation library API modifications.</li>
+<li>Added comments tagged with @external and @global JSDoc indicators.</li>
+</ul>
+<h3 id="v0-16-7">v0.16.7</h3>
+<p>15 Dec 2014 &mdash; OAA Evaluation Library Rev. 2489</p>
+<ul>
+<li>Improved keyboard support and screen reader compatibility (see below).</li>
+<li>Layout improvements for cross-platform consistency in Windows, Linux and Mac OS X.</li>
+<li>Data model and controller code modifications for compatibility with new OpenAjax Evaluation Library APIs.</li>
+<li>The addition of a new preference (Preferences &gt; General &gt; Screen reader compatibility), namely a checkbox labeled &quot;Add column header data in table cells&quot; (see below).</li>
+<li><strong>Screen reader compatibility</strong>: All data regions, such as the summary grid, the selected rule text box and the rule details/actions text box, are now focusable and have accessible names and/or descriptions. In XUL tables, however, only rows, and not individual data cells are focusable, and row or column header information is not read by screen reader software.</li>
+<li>To improve the accessibility of the data tables, the preference described above was added and has the following effect.<ul>
+<li>When screen reader compatibility mode is selected, column header data is included in table data cells, typically as either prefixes or suffixes, along with the pertinent result data.</li>
+<li>This mode is suboptimal for sighted users, but for screen reader users, all of the result information in each table is now accessible.</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0-16-6">v0.16.6</h3>
+<p>20 Oct 2014 &mdash; OAA Evaluation Library v0.9.5</p>
+<ul>
+<li>Reworked the Rule Details view:<ul>
+<li>Rule summary now appears alone as second-level header, no longer within a text box</li>
+<li>Rule result value (abbreviated) is now displayed at the top right with color-coded background (same as summary grid on other two views)</li>
+<li>Moved the ACTIONS message into the rule info text</li>
+<li>Renamed Rule Information tab to Details/Actions and made it the first tab</li>
+<li>Changed ordering of rule info sections in Details/Actions tab</li>
+<li>Added tooltips for rule result value, highlight menulist and highlight menuitmes</li>
+</ul>
+</li>
+<li>In the Category/Guideline view, reduced number of rows in Rule Results table from 12 to 10</li>
+<li>Added preference named extensions.ainspector.advanced.hideVersionId<ul>
+<li>Set to true by default (i.e. version is hidden)</li>
+<li>Accessible via about:config</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0-16-5">v0.16.5</h3>
+<p>15 Sep 2014 &mdash; OAA Evaluation Library v0.9.5</p>
+<ul>
+<li>Rules added or modified in Forms and Links categories</li>
+<li>Added a user preference for the &#39;Rerun Evaluation&#39; button that allows for delayed automatic evaluation (from 5 sec. to 1 min.).<ul>
+<li>This permits the user to manipulate dynamic features in a web page until a desired state is achieved, and the browser to maintain focus on the page while the reevaluation runs automatically, i.e., without the user having to physically interact with the &#39;Rerun Evaluation&#39; button.</li>
+</ul>
+</li>
+<li>Removed the keyboard shortcut for toggling the sidebar, along with associated user preferences.</li>
+<li>Reorganized the Preferences dialog panels.</li>
+</ul>
+</div>
+<div class="col-sm-3" role="navigation" aria-label="User Guides">
+<h2>User Guides</h2>
+<ul class="post-list">
+<li><a href="overview.html">Getting Started</a></li>
+<li><a href="concepts.html">Concepts and Terms</a></li>
+<li><a href="rulesets.html">Rulesets</a></li>
+<li><a href="views.html">Views</a></li>
+<li><a href="screen-reader.html">Screen Reader Users</a></li>
+<li><a href="installation.html">Installation Guide</a></li>
+</ul>
+</div>
+</div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

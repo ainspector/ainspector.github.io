@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!-- Bootstrap: Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- Bootstrap: Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/main.css">
+<title>Views: AInspector Sidebar</title>
+</head>
+
+<body>
+<header>
+<nav class="navbar navbar-default" aria-label="Site Navigation">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">AInspector Sidebar — Documentation</a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User Guides<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+  <li><a href="overview.html">Getting Started</a></li>
+  <li><a href="concepts.html">Concepts and Terms</a></li>
+  <li><a href="rulesets.html">Rulesets</a></li>
+  <li><a href="views.html">Views</a></li>
+  <li><a href="screen-reader.html">Screen Reader Users</a></li>
+  <li><a href="installation.html">Installation Guide</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- navbar-collapse -->
+</div><!-- container-fluid -->
+</nav>
+</header>
+
+<main class="container">
+<div class="row">
+<div class="col-sm-9 post-content">
+<h1 class="page-title">Views</h1>
+<p>AInspector Sidebar is organized by views at three distinct levels. This allows you to progressively examine the high-level evaluation results for the entire page across all rule categories, mid-level results for each category of rules, and low-level results for each rule and the elements on the page to which the rule was applied.</p>
+<h2 id="summary">Summary</h2>
+<p>The top-level Summary view provides a table of aggregated rule results across all <strong>Rule Categories</strong> or <strong>WCAG Guidelines</strong>, selectable via a tab panel. Each result row indicates the number of rule violations (V), warnings (W), manual checks (MC) and passes (P) for all of the rules within that category or guideline.</p>
+<h2 id="rule-category">Rule Category</h2>
+<p>The Category/Guideline view provides a <strong>Rule Results</strong> table that lists the results for the application of each rule within the selected grouping. Each rule result includes the following:</p>
+<ul>
+<li>Rule summary: a short description of the rule</li>
+<li>Rule result value: V, W, MC, P or N/A (not applicable)</li>
+<li>WCAG Success Criterion (SC) to which the rule corresponds</li>
+<li>WCAG Level of the SC: A or AA</li>
+<li>Whether the rule is Required or Recommended within the context of the ruleset</li>
+</ul>
+<p>Below the Rule Results table is a text box labeled <strong>Selected Rule</strong> that contains the full definition and recommended actions for each rule when it is selected in the Rule Results table.</p>
+<h2 id="rule-details">Rule Details</h2>
+<p>The Rule Details view provides information relating to the evaluation results for a specific rule, along with information on the rule itself. It contains a tab panel with two sub-views.</p>
+<ul>
+<li>The first panel, labeled <strong>Actions/Details</strong>, provides the full rule definition, its purpose, the actions needed, if any, to bring the page into compliance with the rule requirements, recommended techniques for meeting the rule requirements, and other information.</li>
+<li>The second panel, labeled <strong>Element Results</strong>, lists each element to which the rule was applied, the element-level result, V, W, MC, P or H (hidden), the element position within the page, and a message, if applicable, that indicates recommended actions for bringing the element into compliance with the rule.</li>
+</ul>
+</div>
+<div class="col-sm-3" role="navigation" aria-label="User Guides">
+<h2>User Guides</h2>
+<ul class="post-list">
+<li><a href="overview.html">Getting Started</a></li>
+<li><a href="concepts.html">Concepts and Terms</a></li>
+<li><a href="rulesets.html">Rulesets</a></li>
+<li><a href="views.html">Views</a></li>
+<li><a href="screen-reader.html">Screen Reader Users</a></li>
+<li><a href="installation.html">Installation Guide</a></li>
+</ul>
+</div>
+</div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

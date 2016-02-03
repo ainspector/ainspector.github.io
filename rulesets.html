@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!-- Bootstrap: Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- Bootstrap: Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/main.css">
+<title>Rulesets: AInspector Sidebar</title>
+</head>
+
+<body>
+<header>
+<nav class="navbar navbar-default" aria-label="Site Navigation">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">AInspector Sidebar — Documentation</a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User Guides<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+  <li><a href="overview.html">Getting Started</a></li>
+  <li><a href="concepts.html">Concepts and Terms</a></li>
+  <li><a href="rulesets.html">Rulesets</a></li>
+  <li><a href="views.html">Views</a></li>
+  <li><a href="screen-reader.html">Screen Reader Users</a></li>
+  <li><a href="installation.html">Installation Guide</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- navbar-collapse -->
+</div><!-- container-fluid -->
+</nav>
+</header>
+
+<main class="container">
+<div class="row">
+<div class="col-sm-9 post-content">
+<h1 class="page-title">Rulesets</h1>
+<p>Rulesets are collections of accessibility rules derived from a particular set of conformance goals with respect to web accessibility requirements and standards.</p>
+<p>A primary goal, shared by both rulesets described below, is WCAG 2.0 Level A and AA conformance.</p>
+<p>The rulesets included with AInspector Sidebar were created in conjunction with the <a href="http://www.openajax.org/member/wiki/Accessibility">OpenAjax Alliance Accessibility Task Force</a>, and are based on the <a href="http://www.w3.org/TR/WCAG20/">W3C Web Content Authoring Guidelines (WCAG) 2.0</a> and other W3C accessibility standards, including the <a href="http://www.w3.org/TR/wai-aria/">W3C Accessible Rich Internet Applications (ARIA) 1.0</a> specification.</p>
+<p>To select a ruleset, open the <strong>Preferences</strong> dialog and select the <strong>Evaluation</strong> panel. Two rulesets are currently available:</p>
+<h2 id="html5-and-aria-techniques">HTML5 and ARIA Techniques</h2>
+<p>Evaluation of WCAG 2.0 Level A and AA conformance using HTML5 and ARIA accessibility techniques</p>
+<p>ARIA Landmarks are required for the identification and labeling of the sections of content on a web page. The ruleset requires the use of ARIA widget roles for identifying and describing interactive elements (e.g. popup menus, grids, trees, etc.) that cannot be not described by the native semantics of HTML5 form control and links elements.</p>
+<ul>
+<li>Version: 1.0.0-beta.4</li>
+<li>Total Rules: 128</li>
+<li>Required Rules: 115</li>
+<li>Recommended Rules: 13</li>
+</ul>
+<h2 id="html4-legacy-techniques">HTML4 Legacy Techniques</h2>
+<p>Evaluation of WCAG 2.0 Level A and AA conformance using HTML4 accessibility techniques, but allows for the use of HTML5 and ARIA techniques</p>
+<p>ARIA landmarks are NOT required, but if used must follow landmark and sectioning element requirements as outlined in HTML5 and ARIA. The ruleset does NOT require the use of ARIA widget roles for identifying and describing interactive elements (e.g. popup menus, grids, trees, etc.) that cannot be not described by the native semantics of HTML4 and HTML5 form control and link elements.</p>
+<p>This means the developer will need to do more manual checking and have a high-level understanding of assistive technologies to describe widgets (typically using offscreen text and/or small images with ALT text) and define and manage the roles, properties and states of interactive elements.</p>
+<ul>
+<li>Version: 1.0.0-beta.4</li>
+<li>Total Rules: 118</li>
+<li>Required Rules: 77</li>
+<li>Recommended Rules: 41</li>
+</ul>
+</div>
+<div class="col-sm-3" role="navigation" aria-label="User Guides">
+<h2>User Guides</h2>
+<ul class="post-list">
+<li><a href="overview.html">Getting Started</a></li>
+<li><a href="concepts.html">Concepts and Terms</a></li>
+<li><a href="rulesets.html">Rulesets</a></li>
+<li><a href="views.html">Views</a></li>
+<li><a href="screen-reader.html">Screen Reader Users</a></li>
+<li><a href="installation.html">Installation Guide</a></li>
+</ul>
+</div>
+</div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

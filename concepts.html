@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!-- Bootstrap: Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- Bootstrap: Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/main.css">
+<title>Concepts and Terms: AInspector Sidebar</title>
+</head>
+
+<body>
+<header>
+<nav class="navbar navbar-default" aria-label="Site Navigation">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">AInspector Sidebar — Documentation</a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User Guides<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+  <li><a href="overview.html">Getting Started</a></li>
+  <li><a href="concepts.html">Concepts and Terms</a></li>
+  <li><a href="rulesets.html">Rulesets</a></li>
+  <li><a href="views.html">Views</a></li>
+  <li><a href="screen-reader.html">Screen Reader Users</a></li>
+  <li><a href="installation.html">Installation Guide</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- navbar-collapse -->
+</div><!-- container-fluid -->
+</nav>
+</header>
+
+<main class="container">
+<div class="row">
+<div class="col-sm-9 post-content">
+<h1 class="page-title">Concepts and Terms</h1>
+<h2 id="basic-concepts">Basic Concepts</h2>
+<p>Rule
+: A low-level accessibility conformance requirement with numerous components, the most basic of which are a definition, an evaluation function, and result messages. When a rule is evaluated, it is assigned a rule result value.</p>
+<p>Target resources
+: The set of HTML elements to which a particular rule applies. These include familiar elements such as <code>div</code>, <code>img</code> and <code>input</code>, as well as a pseudo-element designated as <code>page</code>, which is a placeholder for the document element. When a rule is evaluated, each of its target resources is assigned an element result value.</p>
+<p>Ruleset
+: A set of rules that embodies specific standards conformance goals. Each rule within a ruleset is designated as either required or recommended, according to its relationship to the conformance goals of the ruleset.</p>
+<p>Evaluation
+: The application of all evaluation functions of all rules in the selected ruleset to their corresponding target resources in a web page, and the subsequent collection of all evaluation results and messages, at both the rule and element levels, into a dataset.</p>
+<p>Rule result
+: The aggregate result of a rule evaluation with respect to its target resources (all of its target elements and/or the entire page).</p>
+<p>Element result
+: The result of a rule evaluation with respect to one of its target elements.</p>
+<h2 id="rule-and-element-result-values">Rule and element result values</h2>
+<p><code>V</code> Violation
+: One or more target elements fail the requirements of a required rule</p>
+<p><code>W</code> Warning
+: One or more target elements fail the requirements of a recommended rule</p>
+<p><code>MC</code> Manual check
+: Unable to programmatically determine a result &#8211; evaluation requires human inspection</p>
+<p><code>P</code> Pass
+: All rule requirements were satisfied</p>
+<p><code>N/A</code> Not applicable
+: Rule was not applied because there were no relevant target elements</p>
+<p><code>H</code> Hidden
+: Target element was not evaluated because it is hidden (either visually or from assistive technologies)</p>
+<h2 id="more-about-rules-target-resources-and-result-values">More about rules, target resources and result values</h2>
+<ul>
+<li><p>A rule tests target resources for specific accessibility features.</p>
+</li>
+<li><p>Some rules are fully automated and return pass or fail results and messages.</p>
+</li>
+<li><p>Other rules can only identify the need for human judgement to determine whether an accessibility requirement has been met. These return manual check results and messages.</p>
+</li>
+<li><p>If target resources are not found on the page, the rule result is designated as not applicable.</p>
+</li>
+<li><p>If target resources for a rule are hidden, their element results are designated as hidden. Although hidden elements are not evaluated, they are listed at the element results level to enable developers to consider their accessibility if and when they become available to users.</p>
+</li>
+<li><p>Rules also include information on accessibility techniques and links to related resources to help developers understand how to meet the requirements of a rule.</p>
+</li>
+</ul>
+</div>
+<div class="col-sm-3" role="navigation" aria-label="User Guides">
+<h2>User Guides</h2>
+<ul class="post-list">
+<li><a href="overview.html">Getting Started</a></li>
+<li><a href="concepts.html">Concepts and Terms</a></li>
+<li><a href="rulesets.html">Rulesets</a></li>
+<li><a href="views.html">Views</a></li>
+<li><a href="screen-reader.html">Screen Reader Users</a></li>
+<li><a href="installation.html">Installation Guide</a></li>
+</ul>
+</div>
+</div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
