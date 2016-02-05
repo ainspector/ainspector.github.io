@@ -96,6 +96,11 @@ code {
 code {
   padding: 1px 5px; }
 
+code.kbd {
+  color: #112;
+  padding: 1px 4px;
+  text-transform: uppercase; }
+
 pre {
   padding: 8px 12px;
   overflow-x: scroll; }
