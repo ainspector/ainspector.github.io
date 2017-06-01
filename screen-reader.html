@@ -53,27 +53,27 @@
 <p>This guide describes the structure of the informational views in AInspector Sidebar. It includes an overview of the scope and types of information provided by AInspector, along with tips on navigating between and among the three view levels.</p>
 <p>It is intended as a guide for screen reader users, but anyone interested in how information is structured in AInspector Sidebar may find it useful.</p>
 <h2 id="views-and-progressive-disclosure-of-information">Views and progressive disclosure of information</h2>
-<p>When AInspector Sidebar evaluates the page loaded in Firefox, it produces a vast array of information. For example, when the <strong>HTML5 &amp; Aria Techniques</strong> ruleset is selected, there is detailed information available from within the sidebar on 128 accessibility rules (at the time of this writing). For each of these rules you can find information that includes its definition, purpose, the recommended techniques for conforming to the rule, associated WCAG 2.0 Success Criteria, etc.</p>
-<p>And while not all 128 rules will have been evaluated for any given page (since some, and usually many rules will be <strong>not applicable</strong>), information is provided on all of the rules that were applicable down to the element level. Thus for some rules at the rule details level, there are lists of potentially hundreds of elements along with pertinent evaluation result information for each element. AInspector Sidebar allows you to drill down to this information for each rule evaluation result.</p>
+<p>When AInspector Sidebar evaluates the page loaded in Firefox, it produces a vast array of information. For example, when the <strong>HTML5 and ARIA Techniques</strong> ruleset is selected, there is detailed information available from within the sidebar on 132 accessibility rules (at the time of this writing). For each of these rules you can find information that includes its definition, purpose, the recommended techniques for conforming to the rule, associated WCAG 2.0 Success Criteria, etc.</p>
+<p>And while not all 132 rules will have been evaluated for any given page (since some, and usually many rules will be <strong>not applicable</strong>), information is provided on all of the rules that were applicable down to the element level. Thus for some rules at the <strong>Rule Details</strong> level, there are lists of potentially hundreds of elements along with pertinent evaluation result information for each element. AInspector Sidebar allows you to drill down to this information for each rule evaluation result.</p>
 <h3 id="sidebars-have-a-very-limited-amount-of-space">Sidebars have a very limited amount of space</h3>
 <p>XUL sidebars in Firefox operate within a certain set of constraints. One of these relates to its geometry, namely a maximum width and height. Another is that the sidebar itself is not scrollable. Thus, AInspector Sidebar makes use of views for its progressive display of information.</p>
 <p>When you select a view, the information for the current view is replaced by the information for the selected view. It is important to note that the sidebar provides information for only one view at a time.</p>
 <p>To compensate for the limited amount of space, AInspector Sidebar attempts to make it easy to navigate between and among views. At all times, the <strong>Views menu</strong> is available near the top of the sidebar. Additionally, there are <strong>keyboard shortcuts</strong> provided that take you &quot;back one level&quot; in the view hierarchy, or &quot;all the way back&quot; to the top level Summary view from any lower level.</p>
 <h3 id="how-views-are-structured">How views are structured</h3>
-<p>To emphasize the scope of the information available within AInspector Sidebar, let&apos;s use the HTML5 &amp; ARIA Techniques ruleset as an example. For any evaluation using this ruleset, there are:</p>
+<p>To illustrate the scope of the information available within AInspector Sidebar, consider the HTML5 and ARIA Techniques ruleset as an example. For any evaluation using this ruleset, the following views are available:</p>
 <ul>
-<li>1 Summary view,</li>
-<li>25 Rule Category or WCAG Guideline views (including the All Rules view), and</li>
-<li>128 Rule Details views</li>
+<li>1 Summary view</li>
+<li>25 Rule Category and WCAG Guideline views (including the All Rules view)</li>
+<li>132 Rule Details views (one for each rule)</li>
 </ul>
-<p>for a grand total of 154 separate informational views.</p>
-<p>However, this becomes much simpler when you consider the information structure with respect to view levels. The three levels are, ordered from high to low:</p>
+<p>for a grand total of  158 separate informational views.</p>
+<p>Even though there are many different views, the information structure, with respect to view levels, is relatively simple. The three levels, ordered from high to low, are:</p>
 <ul>
-<li>Summary view</li>
-<li>Rule Category view</li>
-<li>Rule Details view</li>
+<li>Summary</li>
+<li>Rule Category or WCAG Guideline</li>
+<li>Rule Details</li>
 </ul>
-<p>The information is structured such that you can drill down from the top-level Summary view to each of the mid-level Rule Category views and from any of these to lower-level Rule Details views.</p>
+<p>The information is structured such that you can drill down from the top-level Summary view to each of the mid-level Rule Category or WCAG Guideline views and from any of these to lower-level Rule Details views.</p>
 <h3 id="walkthrough-of-navigation-through-view-levels">Walkthrough of navigation through view levels</h3>
 <p>When you first load the sidebar, you are at the <strong>Summary</strong> view, which sits at the top level of the hierarchy. When you are at one of the two lower level views, you can always come back to the Summary view using the keyboard shortcut: Win: <code class="kbd">ctrl</code>+<code class="kbd">shift</code>+<code class="kbd">backspace</code> / Mac: <code class="kbd" aria-label="command">cmd</code>+<code class="kbd">shift</code>+<code class="kbd">backspace</code>, or from the Views menu button (described below) by selecting Summary.</p>
 <p>From each row in the Summary table, you can select the corresponding Rule Category or WCAG Guideline rule results. This mid-level view, called the <strong>Rule Category</strong> view, provides a table of rule results. The rows in the table provide evaluation results for each rule included in the Rule Category. From each row in the Rule Results table you can drill down to the lowest level Rule Details view.</p>
